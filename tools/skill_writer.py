@@ -106,7 +106,7 @@ def build_identity_string(meta: dict) -> str:
     if time_since:
         parts.append(f"分手 {time_since}")
 
-    identity = "，".join(parts) if parts else "前女友"
+    identity = "，".join(parts) if parts else "前任"
 
     if occupation:
         identity += f"，{occupation}"
@@ -125,7 +125,7 @@ def create_skill(
     memories_content: str,
     persona_content: str,
 ) -> Path:
-    """创建新的前女友 Skill 目录结构"""
+    """创建新的前任 Skill 目录结构"""
 
     skill_dir = base_dir / slug
     skill_dir.mkdir(parents=True, exist_ok=True)
@@ -271,7 +271,7 @@ def update_skill(
 
 
 def list_exes(base_dir: Path) -> list:
-    """列出所有已创建的前女友 Skill"""
+    """列出所有已创建的前任 Skill"""
     exes = []
 
     if not base_dir.exists():
@@ -304,8 +304,8 @@ def list_exes(base_dir: Path) -> list:
 def main() -> None:
     parser = argparse.ArgumentParser(description="Skill 文件写入器")
     parser.add_argument("--action", required=True, choices=["create", "update", "list"])
-    parser.add_argument("--slug", help="前女友 slug（用于目录名）")
-    parser.add_argument("--name", help="前女友昵称")
+    parser.add_argument("--slug", help="前任 slug（用于目录名）")
+    parser.add_argument("--name", help="前任昵称")
     parser.add_argument("--meta", help="meta.json 文件路径")
     parser.add_argument("--memories", help="memories.md 内容文件路径")
     parser.add_argument("--persona", help="persona.md 内容文件路径")
@@ -314,7 +314,7 @@ def main() -> None:
     parser.add_argument(
         "--base-dir",
         default="./exes",
-        help="前女友 Skill 根目录（默认：./exes）",
+        help="前任 Skill 根目录（默认：./exes）",
     )
 
     args = parser.parse_args()
@@ -323,9 +323,9 @@ def main() -> None:
     if args.action == "list":
         exes = list_exes(base_dir)
         if not exes:
-            print("暂无已创建的前女友 Skill")
+            print("暂无已创建的前任 Skill")
         else:
-            print(f"已创建 {len(exes)} 个前女友 Skill：\n")
+            print(f"已创建 {len(exes)} 个前任 Skill：\n")
             for e in exes:
                 updated = e["updated_at"][:10] if e["updated_at"] else "未知"
                 print(f"  [{e['slug']}]  {e['name']} — {e['identity']}")

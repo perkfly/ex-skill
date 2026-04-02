@@ -1,6 +1,6 @@
 <div align="center">
 
-# 前女友.skill
+# 前任.skill
 
 > *"从此以后，你的手机里不止有聊天记录，还有一个她。"*
 
@@ -84,13 +84,13 @@ pip3 install -r requirements.txt
 
 按提示输入她的昵称、关系信息（如 `在一起三年 大学同学 分手一年`）、性格标签，然后选择数据来源。所有字段均可跳过，仅凭描述也能生成。
 
-完成后用 `/{slug}` 调用该前女友 Skill。
+完成后用 `/{slug}` 调用该前任 Skill。
 
 ### 管理命令
 
 | 命令 | 说明 |
 |------|------|
-| `/list-exes` | 列出所有前女友 Skill |
+| `/list-exes` | 列出所有前任 Skill |
 | `/{slug}` | 调用完整 Skill（Persona + Memories） |
 | `/{slug}-memories` | 仅共同记忆 |
 | `/{slug}-persona` | 仅人物性格 |
@@ -108,7 +108,7 @@ pip3 install -r requirements.txt
 ```
 用户      > 在干嘛呢
 
-前女友.skill > 刚下班
+前任.skill > 刚下班
            > 好累啊今天
            > 你呢 怎么这个点才找我 🥺
 ```
@@ -118,7 +118,7 @@ pip3 install -r requirements.txt
 ```
 用户      > 不好意思刚才在忙
 
-前女友.skill > 哦
+前任.skill > 哦
            > （过了5分钟）
            > 你每次都说在忙
            > 上次也是这样
@@ -129,11 +129,11 @@ pip3 install -r requirements.txt
 ```
 用户      > 想吃什么
 
-前女友.skill > 随便啊
+前任.skill > 随便啊
 用户      > 那吃面？
-前女友.skill > 不想吃面
+前任.skill > 不想吃面
 用户      > 火锅？
-前女友.skill > 嘿嘿你怎么知道的 💕
+前任.skill > 嘿嘿你怎么知道的 💕
 ```
 
 ---
@@ -142,7 +142,7 @@ pip3 install -r requirements.txt
 
 ### 生成的 Skill 结构
 
-每个前女友 Skill 由两部分组成：
+每个前任 Skill 由两部分组成：
 
 | 部分 | 内容 |
 |------|------|
@@ -190,7 +190,7 @@ ex-skill/
 │   ├── social_media_parser.py # 社交媒体解析
 │   ├── skill_writer.py        # Skill 文件管理
 │   └── version_manager.py     # 版本存档与回滚
-├── exes/                 # 生成的前女友 Skill（gitignored）
+├── exes/                 # 生成的前任 Skill（gitignored）
 ├── docs/PRD.md
 ├── requirements.txt
 └── LICENSE

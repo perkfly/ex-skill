@@ -1,4 +1,4 @@
-# 前女友.skill 安装说明
+# 前任.skill 安装说明
 
 ---
 
@@ -22,7 +22,7 @@ git clone https://github.com/perkfly/ex-skill ~/.claude/skills/create-ex
 
 然后在 Claude Code 中说 `/create-ex` 即可启动。
 
-生成的前女友 Skill 默认写入 `./exes/` 目录。
+生成的前任 Skill 默认写入 `./exes/` 目录。
 
 ---
 
@@ -105,7 +105,7 @@ python3 tools/imessage_parser.py --help
 # 测试照片分析器
 python3 tools/photo_analyzer.py --help
 
-# 列出已有前女友 Skill
+# 列出已有前任 Skill
 python3 tools/skill_writer.py --action list --base-dir ./exes
 ```
 
@@ -120,7 +120,7 @@ ex-skill/                 ← clone 到 .claude/skills/create-ex/
 ├── tools/                # Python 工具脚本
 ├── docs/                 # 文档
 │
-└── exes/                 # 生成的前女友 Skill 存放处（.gitignore 排除）
+└── exes/                 # 生成的前任 Skill 存放处（.gitignore 排除）
     └── {slug}/
         ├── SKILL.md              # 完整 Skill（Persona + Memories）
         ├── memories.md           # 共同记忆

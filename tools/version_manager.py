@@ -108,12 +108,12 @@ def cleanup_old_versions(skill_dir: Path, max_versions: int = MAX_VERSIONS):
 def main():
     parser = argparse.ArgumentParser(description="Skill 版本管理器")
     parser.add_argument("--action", required=True, choices=["list", "rollback", "cleanup"])
-    parser.add_argument("--slug", required=True, help="前女友 slug")
+    parser.add_argument("--slug", required=True, help="前任 slug")
     parser.add_argument("--version", help="目标版本号（rollback 时使用）")
     parser.add_argument(
         "--base-dir",
         default="./exes",
-        help="前女友 Skill 根目录（默认：./exes）",
+        help="前任 Skill 根目录（默认：./exes）",
     )
 
     args = parser.parse_args()

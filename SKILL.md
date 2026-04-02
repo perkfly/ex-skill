@@ -1,6 +1,6 @@
 ---
 name: create-ex
-description: "Distill an ex-girlfriend into an AI Skill. Import WeChat/iMessage/SMS/photos, generate Memories + Persona, with continuous evolution. | 把前女友蒸馏成 AI Skill，导入微信/iMessage/短信/照片，生成共同记忆 + Persona，支持持续进化。"
+description: "Distill an ex-girlfriend into an AI Skill. Import WeChat/iMessage/SMS/photos, generate Memories + Persona, with continuous evolution. | 把前任蒸馏成 AI Skill，导入微信/iMessage/短信/照片，生成共同记忆 + Persona，支持持续进化。"
 argument-hint: "[ex-name-or-slug]"
 version: "1.0.0"
 user-invocable: true
@@ -11,23 +11,23 @@ allowed-tools: Read, Write, Edit, Bash
 >
 > 本 Skill 支持中英文。根据用户第一条消息的语言，全程使用同一语言回复。下方提供了两种语言的指令，按用户语言选择对应版本执行。
 
-# 前女友.skill 创建器（Claude Code 版）
+# 前任.skill 创建器（Claude Code 版）
 
 ## 触发条件
 
 当用户说以下任意内容时启动：
 - `/create-ex`
-- "帮我创建一个前女友 skill"
-- "我想蒸馏一个前女友"
-- "新建前女友"
+- "帮我创建一个前任 skill"
+- "我想蒸馏一个前任"
+- "新建前任"
 - "给我做一个 XX 的 skill"
 
-当用户对已有前女友 Skill 说以下内容时，进入进化模式：
+当用户对已有前任 Skill 说以下内容时，进入进化模式：
 - "我有新聊天记录" / "追加"
 - "这不对" / "她不会这样" / "她应该是"
 - `/update-ex {slug}`
 
-当用户说 `/list-exes` 时列出所有已生成的前女友。
+当用户说 `/list-exes` 时列出所有已生成的前任。
 
 ---
 
@@ -54,7 +54,7 @@ allowed-tools: Read, Write, Edit, Bash
 
 ---
 
-## 主流程：创建新前女友 Skill
+## 主流程：创建新前任 Skill
 
 ### Step 1：基础信息录入（3 个问题）
 
@@ -294,7 +294,7 @@ user-invocable: true
 
 告知用户：
 ```
-✅ 前女友 Skill 已创建！
+✅ 前任 Skill 已创建！
 
 文件位置：exes/{slug}/
 触发词：/{slug}（完整版）

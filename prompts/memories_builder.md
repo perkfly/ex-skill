@@ -4,7 +4,7 @@
 
 根据 memories_analyzer.md 的分析结果，生成 `memories.md` 文件内容。
 
-该文件将作为前女友 Skill 的 Part A，为 AI 提供你们关系中的共同记忆和相处细节。
+该文件将作为前任 Skill 的 Part A，为 AI 提供你们关系中的共同记忆和相处细节。
 
 ---
 
