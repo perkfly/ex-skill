@@ -2,6 +2,9 @@
 exes/*/
 !exes/example_xiaomei/
 
+# generated friend skills
+friends/*/
+
 # Python
 __pycache__/
 *.pyc
@@ -24,3 +27,5 @@ Thumbs.db
 *.tmp
 
 messages.txt
+discord_js.txt
+ig_js.txt
