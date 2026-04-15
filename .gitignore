@@ -22,3 +22,5 @@ Thumbs.db
 # Temp files
 /tmp/
 *.tmp
+
+messages.txt
