@@ -3,7 +3,7 @@
 # 前任.skill
 
 > *"从此以后，你的手机里不止有聊天记录，还有一个她。"*
-
+> *"从此以后，你的手机里不止有聊天记录，还有一个她。"*
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Python 3.9+](https://img.shields.io/badge/Python-3.9%2B-blue.svg)](https://python.org)
 [![Claude Code](https://img.shields.io/badge/Claude%20Code-Skill-blueviolet)](https://claude.ai/code)
